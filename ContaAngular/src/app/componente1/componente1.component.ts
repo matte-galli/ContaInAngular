@@ -15,4 +15,9 @@ export class Componente1Component implements OnInit {
   aumentaContatore(): void {
     this.sharedService.incrementaContatore();
   }
+
+  resetContatore(): void {
+    this.sharedService.reset();
+  }
+
 }

@@ -1,7 +1,8 @@
 <div class="container">
     <h2>Componente 1</h2>
     <p>Contatore: {{ sharedService.contatore }}</p>
-    <button (click)="aumentaContatore()">Aumenta Contatore</button>
+    <button (click)="aumentaContatore()" [disabled]="sharedService.contatore >= 10" >Aumenta Contatore</button>
+    <button (click)="resetContatore()"> Reset </button>
   
     <app-componente2></app-componente2>
   </div>

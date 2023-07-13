@@ -9,4 +9,8 @@ export class SharedService {
   incrementaContatore(): void {
     this.contatore++;
   }
+
+  reset(): void {
+    this.contatore = 0;
+  }
 }
