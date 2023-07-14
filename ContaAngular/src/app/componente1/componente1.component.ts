@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from '../shared.service';
+import { SharedConta } from '../shared.service';
 
 @Component({
   selector: 'app-componente1',
@@ -7,17 +7,17 @@ import { SharedService } from '../shared.service';
   styleUrls: ['./componente1.component.css']
 })
 export class Componente1Component implements OnInit {
-  constructor(public sharedService: SharedService) { }
+  constructor(public conta: SharedConta) { }
 
   ngOnInit(): void {
   }
 
   aumentaContatore(): void {
-    this.sharedService.incrementaContatore();
+    this.conta.incrementaContatore();
   }
 
   resetContatore(): void {
-    this.sharedService.reset();
+    this.conta.reset();
   }
 
 }

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class SharedService {
+export class SharedConta {
   contatore: number = 0;
 
   incrementaContatore(): void {
